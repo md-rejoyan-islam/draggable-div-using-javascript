@@ -15,7 +15,7 @@ function startDrag(e) {
   // Get the current mouse position
   offsetX = e.offsetX;
   offsetY = e.offsetY;
-  
+
   // Add event listeners for mousemove and mouseup
   document.addEventListener("mousemove", moveDiv);
   document.addEventListener("mouseup", stopDrag);
@@ -24,6 +24,7 @@ function startDrag(e) {
 // The moveDiv function, which will be called when the mousemove event is fired
 const wWidth = window.innerWidth;
 function moveDiv(e) {
+    
   // Update the div's position based on the current mouse position
 
   div.style.left = e.clientX - offsetX + "px";
