@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#dddeef] overflow-hidden">
+    <div
+      class="w-[350px]  bg-red-400 absolute top-10 left-10 h-fit rounded-md py-2  bg-white  select-none cursor-move "
+      id="moveDiv"
+    >
+  <div class="header">
+    <h1 class="text-2xl font-bold my-3 px-4 cursor-move" id="dragArea">Drag Here</h1>
+    <hr>
+  </div>
+  <div class="body py-2 px-4 cursor-default">
+    <span class="fill-sky-600">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" class="mx-auto"><path d="M18 11h-5V6h3l-4-4-4 4h3v5H6V8l-4 4 4 4v-3h5v5H8l4 4 4-4h-3v-5h5v3l4-4-4-4z"></path></svg>
+    </span>
+    <h1 class="my-2 font-bold text-xl text-center">Draggable Div</h1>
+    <p class="text-lg text-zinc-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, blanditiis? Quos, temporibus. Fuga assumenda amet aliquam harum consequuntur quaerat dolor laborum. </p>
+  </div>
+  </div>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
