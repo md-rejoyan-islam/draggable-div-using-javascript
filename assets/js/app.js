@@ -1,6 +1,5 @@
 //Get Drag Area
 const dragArea = document.getElementById("dragArea");
-
 // Get the div element
 const div = document.getElementById("moveDiv");
 
