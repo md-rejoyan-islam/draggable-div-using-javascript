@@ -32,6 +32,7 @@ function moveDiv(e) {
 
 // The stopDrag function, which will be called when the mouseup event is fired
 function stopDrag() {
+    
   // Remove the event listeners for mousemove and mouseup
   document.removeEventListener("mousemove", moveDiv);
   document.removeEventListener("mouseup", stopDrag);
