@@ -1,6 +1,5 @@
-
 //Get Drag Area
-const dragArea=document.getElementById('dragArea')
+const dragArea = document.getElementById("dragArea");
 
 // Get the div element
 const div = document.getElementById("moveDiv");
@@ -14,7 +13,6 @@ let offsetY = 0;
 
 // The startDrag function, which will be called when the mousedown event is fired
 function startDrag(e) {
-  
   // Get the current mouse position
   offsetX = e.offsetX;
   offsetY = e.offsetY;
@@ -24,14 +22,13 @@ function startDrag(e) {
 }
 
 // The moveDiv function, which will be called when the mousemove event is fired
-const wWidth=window.innerWidth
+const wWidth = window.innerWidth;
 function moveDiv(e) {
   // Update the div's position based on the current mouse position
-  
-    div.style.left = e.clientX - offsetX + "px";
 
- 
-    div.style.top = e.clientY - offsetY + "px";
+  div.style.left = e.clientX - offsetX + "px";
+
+  div.style.top = e.clientY - offsetY + "px";
 }
 
 // The stopDrag function, which will be called when the mouseup event is fired
@@ -40,6 +37,3 @@ function stopDrag() {
   document.removeEventListener("mousemove", moveDiv);
   document.removeEventListener("mouseup", stopDrag);
 }
-
-
-
