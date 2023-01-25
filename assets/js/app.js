@@ -13,6 +13,7 @@ let offsetY = 0;
 
 // The startDrag function, which will be called when the mousedown event is fired
 function startDrag(e) {
+    
   // Get the current mouse position
   offsetX = e.offsetX;
   offsetY = e.offsetY;
