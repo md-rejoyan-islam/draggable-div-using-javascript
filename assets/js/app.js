@@ -15,6 +15,7 @@ function startDrag(e) {
   // Get the current mouse position
   offsetX = e.offsetX;
   offsetY = e.offsetY;
+  
   // Add event listeners for mousemove and mouseup
   document.addEventListener("mousemove", moveDiv);
   document.addEventListener("mouseup", stopDrag);
